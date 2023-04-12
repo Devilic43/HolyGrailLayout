@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background-color: cadetblue;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.navbar {
+    background-color: red;
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+}
+
+.footer {
+    background-color: violet;
+    grid-column: 1 / span 12;
+    grid-row:12 / span 1 ;
+}
+
+.LeftPanel{
+background-color: blue;
+grid-column: 1 / span 2;
+    grid-row: 2/ span 5;
+}
+
+.RightPanel {
+    background-color: turquoise;
+    grid-column: 11 / span 2;
+    grid-row: 2/ span 10;
+}
+
+.Content{
+    background-color: black;
+    grid-column: 3 / span 8;
+    grid-row: 2 / span 10;
+}
